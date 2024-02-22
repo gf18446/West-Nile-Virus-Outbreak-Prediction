@@ -1,1 +1,1 @@
-# West-Nile-Virus-Outbreak-Prediction
+# West Nile Virus Outbreak Prediction
