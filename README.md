@@ -18,7 +18,7 @@ The problem, therefore, can be addressed through predictive modelling that can a
 6. [Conclusion & Recommendations](#5-Conclusion-&-Recommendations)
 7. [Python Libraries](#7-Python-Libraries)
 
-Overview of Exploratory Data Analysis (EDA) & Data Manipulation
+### Overview of Exploratory Data Analysis (EDA) & Data Manipulation
 
 - Data Visualisation: Identify distribution patterns, outliers, and variable relationships, employing visualizations like histograms and scatter plots highlighting imbalances between classes of species and trap type.
 - Data Imputation & Aggregation of Data: Handling of missing values, including geographical coordinates of traps and consolidation of duplicate records resulting from sampling limitations, ensuring accurate mosquito count representation per trap, date, and species.
@@ -26,14 +26,14 @@ Overview of Exploratory Data Analysis (EDA) & Data Manipulation
 - Correlation Analysis: To investigate relationships between variables and identify potential predictors for the regression models, including the use of heatmaps for visualizing multicollinearity.
 - Feature Engineering: Derived new variables (e.g splitting the date into separate features for day, month, and year) to capture temporal dynamics affecting mosquito populations and WNV transmission.
 
-Overview of Regression Analysis
+### Overview of Regression Analysis
 
 - Iterative Feature Selection: Linear regression was used to find contributors to high mosquito numbers, while logistic regression identified predictors of WNV presence. Iterative feature selection and model refinement were selecting or excluding variables based on their statistical significance (P values of correlation) and contribution to model performance (accuracy). 
 - Model Evaluation Metrics: Employed classification matrices and measures such as accuracy, precision, specificity, and sensitivity, alongside the odds ratio for logistic regression, providing an assessment of model performance.
 - Statistical Analysis: Chi-square test for differences between species and ANOVA assessing differences between annual mosquito populations. 
 - Assumption Testing: Conducted Breusch-Pagan and Shapiro-Wilk tests to check homoscedasticity and normality, ensuring the validity of regression model assumptions.
 
-Conclusions:
+### Conclusions:
 
 - Linear Regression Insights: Identified month, latitude, longitude and trap type as significant. Noting proximity to water features and increased numbers in urban areas likely to reflect trap distribution, heat island effect of developed residential areas and domestic water containers providing habitats for mosquito larvae.
 - Logistic Regression Insights: Year, longitude, mosquito count, and species (notably C.Pipiens) as strong predictors of WNV, high multicollinearity between two species emphasizing survey identification challenges and class imbalances' effect on model predictions.
